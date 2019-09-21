@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using nvp.Events;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
@@ -27,12 +27,14 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        NvpEventController.InvokeEvent("GameResumed", this, null);
     }
     public void Pause()
     {
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        NvpEventController.InvokeEvent("GamePaused", this, null);
     }
 
     public void LoadMenu()
