@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Workspace_LeoU/MyPrefabs/explosion_player.prefab.meta
 guid: 34c5a64194c0d6c4e9d58a0efdcddcd3
 PrefabImporter:
+=======
+guid: e44a44cc7eb8cfc45b9d608db2387026
+folderAsset: yes
+DefaultImporter:
+>>>>>>> 347759bcee579bc53a5d3103435ae7a5073e260b:Assets/Workspace_Lars.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
