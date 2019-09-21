@@ -8,6 +8,7 @@ public class InitiateExplosion : MonoBehaviour
     
     void Start()
     {
+        Destroy(this.gameObject);
         EventController.SubscribeToEvent(GameEvents.InitExplosion, onExplosion);
     }
 

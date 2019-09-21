@@ -16,6 +16,11 @@ public class DestroyByCollision : MonoBehaviour
 
     }
 
+    void OnTriggerExit(Collider col)
+    {
+        EventController.InvokeEvent(GameEvents.BoundryCollision, this.gameObject, col.gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

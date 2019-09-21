@@ -37,8 +37,11 @@ public class JetCollide : MonoBehaviour
         {
             sourceObject.SetActive(false);
             Destroy(targetObject);
+
             EventController.InvokeEvent(GameEvents.SpawnJets, this, sourceObject);
+            EventController.InvokeEvent(GameEvents.IncreaseScore1, this, sourceObject);
             EventController.InvokeEvent(GameEvents.InitExplosion, this, sourceObject.transform.position);
         }
+        
     }
 }

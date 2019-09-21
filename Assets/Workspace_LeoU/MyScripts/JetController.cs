@@ -6,12 +6,12 @@ public class JetController : MonoBehaviour
 {
     public float velSpeed = 1000;
     public float rotSpeed = 250;
-    public int playerNum=1;
+    public int playerNum = 1;
 
     public void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal"+playerNum);
-        float moveVertical = Input.GetAxis("Vertical"+playerNum);
+        float moveHorizontal = Input.GetAxis("Horizontal" + playerNum);
+        float moveVertical = Input.GetAxis("Vertical" + playerNum);
 
         var body = GetComponent<Rigidbody>();
         Vector3 rotation = new Vector3(0.0f, moveHorizontal * rotSpeed * Time.deltaTime, 0.0f);
@@ -23,12 +23,18 @@ public class JetController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
-    {   
-
+    {
+        if (gameObject.transform.position.x > 24 ||
+            gameObject.transform.position.x < (-24) ||
+            gameObject.transform.position.z > 12 ||
+            gameObject.transform.position.z < (-12))
+            {   
+                gameObject.transform.position=new Vector3(0.0f, 0.0f, 0.0f);
+            }
     }
 }

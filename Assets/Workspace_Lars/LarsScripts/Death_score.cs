@@ -3,26 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Kill_score : MonoBehaviour
+
+
+public class Death_score : MonoBehaviour
 {
+  
 
 
-    public static int killValue = 0;
-    Text kill;
+    public int deathValue = 0;
+    Text death;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        kill = GetComponent<Text>();
-
+        death = GetComponent<Text>();
     }
+
+    void increaseScore(object o, object b)
+    {
+        deathValue++;
+    }
+
+
 
     // Update is called once per frame
     void Update()
     {
 
-        kill.text = "Kills:" + killValue;
+        death.text = "Deaths:" + deathValue;
     }
 }

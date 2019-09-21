@@ -19,7 +19,6 @@ public class Kill_Death : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        kd = Death_score.deathValue > 0 ? Kill_score.killValue / Death_score.deathValue : 0;
 
         killrate.text = "KD:" + kd.ToString();
     }

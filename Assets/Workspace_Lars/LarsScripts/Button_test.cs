@@ -11,7 +11,6 @@ public class Button_test : MonoBehaviour
        // if (bool = true) { 
         Kill_score.killValue += 1;
 
-        Death_score.deathValue += 1;
 
         // }
     }
