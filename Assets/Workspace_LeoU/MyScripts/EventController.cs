@@ -9,7 +9,7 @@ public enum GameEvents
     OnShowMessage,
     JetCollides,
     SpawnJets,
-    initExplosion
+    InitExplosion
 }
 
 public class EventController : MonoBehaviour

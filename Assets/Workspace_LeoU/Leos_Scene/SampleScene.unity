@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c9f2fff469e5f5a408d90dcd17841d3b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.044414505, g: 0.0418735, b: 0.045859963, a: 1}
+  m_IndirectSpecularColor: {r: 0.26612332, g: 0.17461777, b: 0.3978769, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -455,6 +455,95 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6032007444112453340}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2766739664579801759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1243311503924051292, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_Name
+      value: explosion_player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3, type: 3}
+--- !u!1 &3973386710687911875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1243311503924051292, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2766739664579801759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3973386710687911876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973386710687911875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cd025e2e4a9cf41b4a882e41593b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1243311503923945854, guid: 34c5a64194c0d6c4e9d58a0efdcddcd3,
+    type: 3}
 --- !u!1001 &6032007444112453340
 PrefabInstance:
   m_ObjectHideFlags: 0

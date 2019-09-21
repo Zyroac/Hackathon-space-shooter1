@@ -30,7 +30,7 @@ public class JetCollide : MonoBehaviour
         {
             sourceObject.SetActive(false);
             EventController.InvokeEvent(GameEvents.SpawnJets, this, sourceObject);
-            EventController.InvokeEvent(GameEvents.initExplosion, this, sourceObject.transform.position);
+            EventController.InvokeEvent(GameEvents.InitExplosion, this, sourceObject.transform.position);
         }
         else if (targetObject.tag == "Bullet" &&
                 targetObject.GetComponent<BulletMover>().super.gameObject != sourceObject)
@@ -38,7 +38,7 @@ public class JetCollide : MonoBehaviour
             sourceObject.SetActive(false);
             Destroy(targetObject);
             EventController.InvokeEvent(GameEvents.SpawnJets, this, sourceObject);
-            EventController.InvokeEvent(GameEvents.initExplosion, this, sourceObject.transform.position);
+            EventController.InvokeEvent(GameEvents.InitExplosion, this, sourceObject.transform.position);
         }
     }
 }
