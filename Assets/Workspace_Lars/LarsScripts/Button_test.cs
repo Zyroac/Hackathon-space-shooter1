@@ -9,7 +9,6 @@ public class Button_test : MonoBehaviour
    public void killhoch()
     {
        // if (bool = true) { 
-        Kill_score.killValue += 1;
 
 
         // }

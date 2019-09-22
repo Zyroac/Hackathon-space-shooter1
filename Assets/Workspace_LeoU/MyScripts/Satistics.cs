@@ -10,7 +10,7 @@ public class Satistics : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        EventController.SubscribeToEvent(GameEvents.IncreaseScore1, increaseScore);
+        EventController.SubscribeToEvent(GameEvents.IncreaseScore, increaseScore);
     }
 
     void increaseScore(object ob1, object ob2)
@@ -20,7 +20,7 @@ public class Satistics : MonoBehaviour
 
     private void OnDisable()
     {
-        EventController.UnsubscribeFromEvent(GameEvents.IncreaseScore1, increaseScore);
+        EventController.UnsubscribeFromEvent(GameEvents.IncreaseScore, increaseScore);
     }
 
     void Update()

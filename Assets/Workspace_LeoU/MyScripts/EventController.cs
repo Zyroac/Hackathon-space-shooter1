@@ -11,8 +11,8 @@ public enum GameEvents
     SpawnJets,
     InitExplosion,
     BoundryCollision,
-    IncreaseScore1,
-    IncreaseScore2
+    IncreaseScore,
+    EndGame
 }
 
 public class EventController : MonoBehaviour

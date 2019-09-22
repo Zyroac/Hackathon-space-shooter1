@@ -29,10 +29,10 @@ public class JetController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.transform.position.x > 24 ||
-            gameObject.transform.position.x < (-24) ||
-            gameObject.transform.position.z > 12 ||
-            gameObject.transform.position.z < (-12))
+        if (gameObject.transform.position.x > 25 ||
+            gameObject.transform.position.x < (-25) ||
+            gameObject.transform.position.z > 13 ||
+            gameObject.transform.position.z < (-13))
             {   
                 gameObject.transform.position=new Vector3(0.0f, 0.0f, 0.0f);
             }

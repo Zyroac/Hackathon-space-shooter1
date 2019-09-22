@@ -35,13 +35,12 @@ public class BoudryExit : MonoBehaviour
             if (posit.x > ((targetObject.transform.localScale.x-2)/2) ||
                 posit.x < (-((targetObject.transform.localScale.x-2)/2)))
             {
-                posit.x = posit.x * (-1);
+                posit.x = posit.x * (-0.97f);
             }
-            else 
             if (posit.z > ((targetObject.transform.localScale.z-2)/2) || 
                 posit.z < (-((targetObject.transform.localScale.z-2)/2)))
             {
-                posit.z = posit.z * (-1);
+                posit.z = posit.z * (-0.9f);
             }
 
             sourceObject.transform.position = posit;
